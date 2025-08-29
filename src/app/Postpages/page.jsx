@@ -113,7 +113,9 @@ export default function Page() {
               />
             )}
             <div className="card-body">
-              <h3>{post.title}</h3>
+
+                 <a href={`/Postpages/${post.title}`} >  <h3>{post.title}</h3></a>
+            
               <p className="card-text">{post.content}</p>
             </div>
           </div>
