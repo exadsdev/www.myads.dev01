@@ -75,7 +75,7 @@ const PostDetailPage = () => {
         </div>
       </div>
       <br />
-       <a href="/Postpages/" className="btn btn-info"> ⬅️ ดูทั้งหมด</a>
+       <a href="https://www.myads.dev" className="btn btn-info"> ⬅️ ดูทั้งหมด</a>
     </div>
 
     </>
