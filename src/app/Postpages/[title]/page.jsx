@@ -33,27 +33,29 @@ const PostDetailPage = () => {
         <meta name="google-site-verification" content="ryOmDGaWXKrwl4E9xiLHh2maGVlmpjzyFN8m9QfAyyM" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Post | รับยิงแอด สายเทา ยิงแอดfacebookสายเทา ยิงแอดGoogleสายเทา</title>
-        <meta name="title" content="www.myads.dev | รับจ้างยิงแอดทำโฆษณาออนไลน์ Google, Facebook Ads" />
-        <meta name="description" content="www.myads.dev รับจ้างยิงแอดทำโฆษณาออนไลน์รับทำโฆษณา Facebook Adsรับทำโฆษณา Googleทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ อัตราค่าบริการเพียงเดือนละ 9,900 บาท" />
+        <meta name="title" content="รับจ้างยิงแอดทำโฆษณาออนไลน์ Google, Facebook Ads" />
+        <meta name="description" content="รับจ้างยิงแอดทำโฆษณาออนไลน์รับทำโฆษณา Facebook Adsรับทำโฆษณา Googleทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ อัตราค่าบริการเพียงเดือนละ 9,900 บาท" />
         
         <meta property="og:title" content={post.title}/>
         <meta property="og:description" content={post.content}/>
-        <meta property="og:image" content="https://www.myads.dev/logo.png"/>
-        <meta property="og:url" content="https://www.myads.dev"/>
+        <meta property="og:image" content="https://myad-dev.com/logo.png"/>
+        <meta property="og:url" content="https://myad-dev.com"/>
         <meta property="og:type" content="website"/>
 
         <meta name="robots" content="index, follow"/>
-        <link rel="shortcut icon" href="https://www.myads.dev/favicon.ico" type="image/x-icon"/>
-        <link rel="canonical" href="https://www.myads.dev/Postpages/" />
+        <link rel="shortcut icon" href="https://myad-dev.com/favicon.ico" type="image/x-icon"/>
+        <link rel="canonical" href="https://myad-dev.com/Postpages/" />
       </>
     <div className="container mx-auto">
       <div className="card mx-auto mt-5" key={post.id}>
         <div className="title h3 text-center">{post.title}</div>
 
         {post.name ? (
-          <iframe
-            width="560"
-            height="315"
+         <>
+         <div className="mx-auto">
+           <iframe
+            width="1120"
+            height="630"
             className="vdoimg"
             src={`https://www.youtube.com/embed/${post.name}`}
             title="YouTube video player"
@@ -61,6 +63,8 @@ const PostDetailPage = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
+         </div>
+         </>
         ) : (
           <img
             src={`${urlimg}${post.imgvdo}`}
@@ -75,7 +79,7 @@ const PostDetailPage = () => {
         </div>
       </div>
       <br />
-       <a href="https://www.myads.dev" className="btn btn-info"> ⬅️ ดูทั้งหมด</a>
+       <a href="https://myad-dev.com" className="btn btn-info"> ⬅️ ดูทั้งหมด</a>
     </div>
 
     </>

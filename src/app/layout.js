@@ -1,8 +1,4 @@
-'use client'; 
-
-// import { GoogleAnalytics } from '@next/third-parties/google';
-// import { GoogleTagManager } from '@next/third-parties/google';
-
+// app/layout.jsx
 import Header from './components/headers';
 import Footer from './components/Footer';
 
@@ -12,31 +8,35 @@ import "./form.css";
 import "./globals.css";  
 
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Script from "next/script";
 import { SessionProvider } from "next-auth/react";
 
-const geistSans = {
-  variable: "--font-geist-sans",  
-};
+const geistSans = { variable: "--font-geist-sans" };
+const geistMono = { variable: "--font-geist-mono" };
 
-const geistMono = {
-  variable: "--font-geist-mono",  
+export const metadata = {
+  title: "myads.dev - รับทำโฆษณาออนไลน์ Google & Facebook Ads",
+  description: "บริการรับทำโฆษณาออนไลน์ Google & Facebook Ads ครบวงจร",
+  openGraph: {
+    title: "myads.dev",
+    description: "บริการรับทำโฆษณาออนไลน์ Google & Facebook Ads ครบวงจร",
+    url: "https://www.myads.dev",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="th">
       <head>
         <meta name="google-site-verification" content="ryOmDGaWXKrwl4E9xiLHh2maGVlmpjzyFN8m9QfAyyM" />
-        <meta property="og:type" content="website"/>
-        <link rel="shortcut icon" href="https://www.myad-dev.com/favicon.ico" type="image/x-icon"/> 
-         
+        <link rel="shortcut icon" href="https://www.myads.dev/favicon.ico" type="image/x-icon"/> 
+        <link rel="canonical" href="https://www.myads.dev" />
+        
+        {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}`}
         />
-
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -45,22 +45,36 @@ export default function RootLayout({ children }) {
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}');
           `}
         </Script>
+
+        {/* JSON-LD */}
+        <Script
+          id="json-ld-organization"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "myads.dev",
+              url: "https://www.myads.dev",
+              logo: "https://www.myads.dev/img/logo.png",
+              sameAs: [
+                "https://www.facebook.com/AdsDev2025",
+                "https://www.youtube.com/@myadsdev"
+              ]
+            })
+          }}
+        />
       </head>
-    
+
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <SessionProvider> 
+        <>
           <Header />
           {children}
-        </SessionProvider>
-
+        </>
         <Footer />
 
-        {/* <GoogleTagManager gtmId={`${process.env.GOOGLE_TAG_MANAGER}`} />
-        <GoogleAnalytics gaId={`${process.env.GOOGLE_A_TICS}`} /> */}
-
+        <Script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" />
       </body>
-
-      <Script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></Script>
     </html>
   );
 }

@@ -71,7 +71,7 @@ export default function secsions() {
     <div className="text-center">
         <h3>บริการรับทำโฆษณาออนไลน์ รับทำโฆษณา Facebook, Google Ads</h3>
         <div className="ads-dark"> 
-    <img src="/img/ads.webp" width='100%' alt="รับทำโฆษณาสายเทา" />
+    <img src="/img/adsdev.jpg" width='100%' alt="รับทำโฆษณาสายเทา" />
     </div> </div>
 
     <h3>บริการรับทำโฆษณา Facebook Ads</h3>

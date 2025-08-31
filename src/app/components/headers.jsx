@@ -17,7 +17,7 @@ const navBar = [
 
 
 export default function Headers() {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
 
 
   return (
@@ -55,7 +55,7 @@ export default function Headers() {
               ))}
             </ul>
             <div className="auth-buttons">
-              {session ? (
+              {/* {session ? (
                 <>
                   <div className="dropdown" >
                         <a className="dropbtn"> 
@@ -72,7 +72,7 @@ export default function Headers() {
                 <button className="btn btn-outline-light" onClick={() => signIn()}>
                   Sign In
                 </button>
-              )}
+              )} */}
             </div>
           </div>
         </div>
