@@ -86,3 +86,13 @@
     }
     
 }
+
+
+
+/* เพิ่มแค่เล็กน้อยให้ดูพรีเมียม */
+.card .form-control {
+  border-radius: 12px;
+}
+.card .btn {
+  min-width: 140px;
+}

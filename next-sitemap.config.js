@@ -1,24 +1,25 @@
-module.exports = {
-  siteUrl: 'https://www.myads.dev',
-  generateRobotsTxt: true, // (optional)
-  // อื่นๆ การตั้งค่าของคุณ
-  transform: async (config, path) => {
-    // กำหนดค่า priority สำหรับเส้นทางเฉพาะ
-    if (path === '/') {
-      return {
-        loc: path, // Link of the page
-        changefreq: 'daily',
-        priority: 1.0, // ค่าความสำคัญที่คุณต้องการกำหนด
-        lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
-      };
-    }
+/** @type {import('next-sitemap').IConfig} */
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.myads.dev';
 
-    // สำหรับเส้นทางอื่น ๆ ใช้ค่า default
+module.exports = {
+  siteUrl,
+  generateRobotsTxt: true,
+  changefreq: 'weekly',
+  priority: 0.7,
+  sitemapSize: 7000,
+  exclude: ['/api/*'],
+  robotsTxtOptions: {
+    policies: [
+      { userAgent: '*', allow: '/' },
+      { userAgent: '*', disallow: ['/api'] }
+    ]
+  },
+  transform: async (config, path) => {
     return {
       loc: path,
-      changefreq: 'daily',
-      priority: 0.7, // หรือค่าอื่นที่คุณต้องการใช้เป็น default
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      changefreq: 'weekly',
+      priority: path === '/' ? 1.0 : 0.7,
+      lastmod: new Date().toISOString()
     };
-  },
+  }
 };

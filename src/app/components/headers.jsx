@@ -95,7 +95,7 @@ export default function Headers() {
             </p>
           </div>
           <div className ="text-center mt-3">
-            <a href="https://lin.ee/RAtXbEtM">
+            <a href="https://lin.ee/vjeDuCZ">
               <img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0" />
             </a>
           </div>

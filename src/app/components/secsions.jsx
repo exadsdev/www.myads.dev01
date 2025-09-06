@@ -1,286 +1,288 @@
-import React from 'react'
-import Link from 'next/link'
-export default function secsions() {
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+export default function Secsions() {
   return (
     <>
-    
+      {/* SECTION: Services/Packages */}
+      <section className="container mt-4" aria-labelledby="services-title">
+        <div className="text-center mt-3">
+          <h2 id="services-title" className="h3">
+            บริการรับจ้างทำการตลาดออนไลน์
+          </h2>
+        </div>
 
-    <div className="text-center mt-3">
-      <h3>บริการรับจ้างทำการตลาดออนไลน์</h3>
-    </div>
-<main className='container mt-5' id='about'>
-<div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div className="col">
-        <div className="card mb-4 rounded-3 shadow-sm border-success">
-            <div className="card-header py-3 text-bg-success border-success">
-              <h4 className="my-0 fw-normal">โปรโมชั่นทดลองยิง 7 วัน</h4>
-            </div>
-            <div className="card-body">
-              <h1 className="card-title pricing-card-title">3500฿<small className="text-body-secondary fw-light"></small></h1>
-              <ul className="list-unstyled mt-3 mb-4">
-                <li>ผลลัพธ์ชัดเจน </li>
-                <li>รับรองการันตี 100%</li>
-                <li>ชำระเงินง่ายดายด้วยบัตรเครดิตของคุณ</li>
-                <li>รายงานผลทุกวัน เวลา 10.00 น.
-                </li>
-              </ul>
-              <Link type="button" href='https://line.myads.dev'  className="w-100 btn btn-lg btn-success">Get started</Link>
-            </div>
+        <div className="row row-cols-1 row-cols-md-3 mb-3 text-center mt-4">
+          <div className="col">
+            <article className="card mb-4 rounded-3 shadow-sm border-success h-100">
+              <div className="card-header py-3 text-bg-success border-success">
+                <h3 className="my-0 fw-normal h5">โปรโมชั่นทดลองยิง 7 วัน</h3>
+              </div>
+              <div className="card-body d-flex flex-column">
+                <p className="card-title pricing-card-title display-6 mb-3">
+                  3,500฿
+                </p>
+                <ul className="list-unstyled mt-2 mb-4 text-start mx-auto" style={{ maxWidth: 320 }}>
+                  <li>ผลลัพธ์ชัดเจน</li>
+                  <li>รับรองการันตี 100%</li>
+                  <li>ชำระเงินด้วยบัตรเครดิตได้</li>
+                  <li>รายงานผลทุกวัน เวลา 10.00 น.</li>
+                </ul>
+                <Link
+                  href="https://line.myads.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-100 btn btn-lg btn-success mt-auto"
+                  aria-label="เริ่มต้นแพ็กเกจทดลองยิง 7 วัน ผ่าน LINE"
+                >
+                  Get started
+                </Link>
+              </div>
+            </article>
+          </div>
+
+          <div className="col">
+            <article className="card mb-4 rounded-3 shadow-sm border-info h-100">
+              <div className="card-header py-3 text-bg-info border-info">
+                <h3 className="my-0 fw-normal h5">สัมผัสประสบการณ์ยิงใหม่ 15 วัน</h3>
+              </div>
+              <div className="card-body d-flex flex-column">
+                <p className="card-title pricing-card-title display-6 mb-3">
+                  6,000฿
+                </p>
+                <ul className="list-unstyled mt-2 mb-4 text-start mx-auto" style={{ maxWidth: 320 }}>
+                  <li>ผลลัพธ์ชัดเจน</li>
+                  <li>รับรองการันตี 100%</li>
+                  <li>ชำระเงินด้วยบัตรเครดิตได้</li>
+                  <li>รายงานผลทุกวัน เวลา 10.00 น.</li>
+                </ul>
+                <Link
+                  href="https://line.myads.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-100 btn btn-lg btn-info mt-auto"
+                  aria-label="เริ่มต้นแพ็กเกจ 15 วัน ผ่าน LINE"
+                >
+                  Get started
+                </Link>
+              </div>
+            </article>
+          </div>
+
+          <div className="col">
+            <article className="card mb-4 rounded-3 shadow-sm border-primary h-100">
+              <div className="card-header py-3 text-bg-primary border-primary">
+                <h3 className="my-0 fw-normal h5">บริการรับทำโฆษณา 1 เดือน</h3>
+              </div>
+              <div className="card-body d-flex flex-column">
+                <p className="card-title pricing-card-title display-6 mb-3">
+                  9,900฿
+                </p>
+                <ul className="list-unstyled mt-2 mb-4 text-start mx-auto" style={{ maxWidth: 320 }}>
+                  <li>เราดูแลทั้งหมดตลอด 30 วัน</li>
+                  <li>รับรองการันตี 100%</li>
+                  <li>รายงานผลทุกวัน เวลา 10.00 น.</li>
+                  <li>ใช้บัตรของลูกค้าเองได้</li>
+                </ul>
+                <Link
+                  href="https://line.myads.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-100 btn btn-lg btn-primary mt-auto"
+                  aria-label="เริ่มต้นแพ็กเกจรายเดือน ผ่าน LINE"
+                >
+                  Get started
+                </Link>
+              </div>
+            </article>
           </div>
         </div>
-        <div className="col">
-        <div className="card mb-4 rounded-3 shadow-sm border-info">
-            <div className="card-header py-3 text-bg-info border-info">
-              <h4 className="my-0 fw-normal">สัมผัสประสบการณ์ยิงใหม่ 15 วัน</h4>
-            </div>
-            <div className="card-body">
-              <h1 className="card-title pricing-card-title">6000฿<small className="text-body-secondary fw-light"></small></h1>
-              <ul className="list-unstyled mt-3 mb-4">
-                <li>ผลลัพธ์ชัดเจน</li>
-                <li>รับรองการันตี 100%</li>
-                <li>ชำระเงินง่ายดายด้วยบัตรเครดิตของคุณ</li>
-                <li>รายงานผลทุกวัน เวลา 10.00 น</li>
-              </ul>
-              <Link type="button" href='https://line.myads.dev' className="w-100 btn btn-lg btn-info">Get started</Link>
-            </div>
+      </section>
+
+      {/* SECTION: Facebook & Google Ads intro */}
+      <section className="container" id="facebook" aria-labelledby="ads-intro-title">
+        <div className="text-center">
+          <h2 id="ads-intro-title" className="h3">
+            บริการรับทำโฆษณาออนไลน์ — Facebook &amp; Google Ads
+          </h2>
+
+          <div className="ads-dark mt-3">
+            <figure>
+              <Image
+                src="/ads.jpg"
+                alt="ตัวอย่างงานโฆษณาออนไลน์ของทีม myads.dev"
+                width={1200}
+                height={675}
+                sizes="(max-width: 768px) 100vw, 1200px"
+                style={{ width: "100%", height: "auto" }}
+                priority={false}
+              />
+              <figcaption className="text-muted small mt-1">
+                ตัวอย่างแดชบอร์ดและผลลัพธ์จากการรันโฆษณา
+              </figcaption>
+            </figure>
           </div>
         </div>
-        <div className="col">
-          <div className="card mb-4 rounded-3 shadow-sm border-primary">
-            <div className="card-header py-3 text-bg-primary border-primary">
-              <h4 className="my-0 fw-normal">บริการรับทำโฆษณา 1 เดือน</h4>
-            </div>
-            <div className="card-body">
-              <h1 className="card-title pricing-card-title">9,900฿<small className="text-body-secondary fw-light"></small></h1>
-              <ul className="list-unstyled mt-3 mb-4">
-                <li>ทางเราจัดการทั้งหมดตลอด 30 วัน</li>
-                <li>รับรองการันตี 100%</li>
-                <li>รายงานผลทุกวัน เวลา 10.00 น.</li>
-                <li>ใช้บัตรของลูกค้าเองได้</li>
-              </ul>
-              <Link type="button" href='https://line.myads.dev' className="w-100 btn btn-lg btn-primary">Get started</Link>
+
+        <article className="mt-4">
+          <h3 className="h4">บริการรับทำโฆษณา Facebook Ads</h3>
+          <p>
+            ทำโฆษณาโดยทีมงานมืออาชีพ คิดกลยุทธ์ สร้างแคมเปญ และวัดผลละเอียด
+            แพ็กเกจเพียงเดือนละ <strong>9,900 บาท</strong> ไม่มีค่าใช้จ่ายแอบแฝง มีรีวิวลูกค้าจริง
+          </p>
+          <p>
+            Facebook ปรับอัลกอริทึมอย่างสม่ำเสมอ ส่งผลต่อการมองเห็นและประสิทธิภาพ
+            เราจึงใช้โครงสร้างแคมเปญที่ยืดหยุ่น พร้อมทดสอบครีเอทีฟ/ออดิเอนซ์ต่อเนื่อง
+          </p>
+          <p>
+            ปฏิบัติตามนโยบายความเป็นส่วนตัว (เช่น GDPR/CCPA) และใช้การติดตามผลแบบ
+            Conversion API/Enhanced Conversions เพื่อวัดผลอย่างแม่นยำ
+          </p>
+
+          <div className="imge mt-3">
+            <Image
+              src="/imgs/facebook_ads.webp"
+              width={1200}
+              height={675}
+              alt="ตัวอย่างครีเอทีฟ Facebook Ads"
+              sizes="(max-width: 768px) 100vw, 1200px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+
+          <div className="text-center my-3">
+            <h4 className="h6">ตัวอย่างที่แสดงเป็นเพียงบางส่วน</h4>
+            <div className="imge mt-2 d-flex justify-content-center">
+              <Image
+                src="/imgfb/h01show.webp"
+                width={800}
+                height={800}
+                alt="รวมตัวอย่างผลลัพธ์โฆษณา Facebook"
+                sizes="(max-width: 768px) 90vw, 800px"
+                style={{ width: "50%", height: "auto", maxWidth: "800px" }}
+              />
             </div>
           </div>
+
+          <h4 className="h5">ผลงาน Facebook (บางส่วน)</h4>
+          <div className="box" role="list" aria-label="แกลเลอรีผลงาน Facebook">
+            {[
+              "h0102.webp","h0103.webp","h0104.webp","h0105.webp","h0106.webp","h0107.webp",
+              "h0108.webp","h0109.webp","h0110.webp","h0111.webp","h0112.webp","h0113.webp",
+            ].map((file) => (
+              <figure className="item" role="listitem" key={file}>
+                <Image
+                  src={`/imgfb/${file}`}
+                  alt={`ผลงาน Facebook Ads: ${file.replace(".webp","")}`}
+                  width={900}
+                  height={900}
+                  sizes="(max-width: 768px) 100vw, 900px"
+                  style={{ width: "100%", height: "auto" }}
+                  loading="lazy"
+                />
+              </figure>
+            ))}
+          </div>
+        </article>
+
+        <hr className="my-4" />
+
+        <article className="google" id="Google" aria-labelledby="google-title">
+          <h3 id="google-title" className="h4">บริการทำโฆษณา Google และ SEO</h3>
+          <p>
+            เพิ่มการมองเห็นผ่าน Search/Display/Video ด้วยโครงสร้างคำค้นที่ตอบโจทย์
+            เจตนาค้นหา (Search Intent) และหน้าลงแลนดิงที่โหลดไวและสื่อสารชัดเจน
+          </p>
+          <p>
+            เราจัดทำ Conversion Tracking, UTM, และแดชบอร์ดสรุป เพื่อให้คุณเห็นแหล่งที่มาและ
+            ROAS ชัดเจน พร้อมแผนปรับปรุงแคมเปญตามข้อมูลจริง
+          </p>
+
+          <figure className="mt-3">
+            <Image
+              src="/top.webp"
+              width={1200}
+              height={675}
+              alt="ตัวอย่างผลลัพธ์จาก Google Ads/SEO"
+              sizes="(max-width: 768px) 100vw, 1200px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </figure>
+
+          <div className="box mt-3" role="list" aria-label="แกลเลอรีผลงาน Google">
+            {Array.from({ length: 18 }, (_, i) => i + 2).map((n) => (
+              <figure className="item" role="listitem" key={n}>
+                <Image
+                  src={`/imggg/${n}.webp`}
+                  alt={`ผลงาน Google Ads: ${n}`}
+                  width={900}
+                  height={900}
+                  sizes="(max-width: 768px) 100vw, 900px"
+                  style={{ width: "100%", height: "auto" }}
+                  loading="lazy"
+                />
+              </figure>
+            ))}
+          </div>
+        </article>
+      </section>
+
+      <hr className="my-4" />
+
+      {/* SECTION: Reviews */}
+      <section className="container" id="reviwe" aria-labelledby="reviews-title">
+        <h2 id="reviews-title" className="h4">รีวิวลูกค้าจริง</h2>
+        <div className="box" role="list" aria-label="แกลเลอรีรีวิวลูกค้า">
+          {["1.webp","2.webp","3.webp","01.webp","02.webp","03.webp"].map((r) => (
+            <figure className="item" role="listitem" key={r}>
+              <Image
+                src={`/review/${r}`}
+                width={900}
+                height={900}
+                alt={`รีวิวลูกค้า ${r.replace(".webp","")}`}
+                sizes="(max-width: 768px) 100vw, 900px"
+                style={{ width: "100%", height: "auto" }}
+                loading="lazy"
+              />
+            </figure>
+          ))}
         </div>
-      </div>
+      </section>
 
-</main>
+      <hr className="my-4" />
 
-   <div className="container" id='facebook'>
+      {/* SECTION: Contact */}
+      <section className="container mt-4" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" className="visually-hidden">ติดต่อทีมงาน</h2>
+        <figure className="contact mt-3">
+          <Image
+            src="/img/contact.webp"
+            width={1200}
+            height={675}
+            alt="ติดต่อเรา myads.dev"
+            sizes="(max-width: 768px) 100vw, 1200px"
+            style={{ width: "100%", height: "auto" }}
+            priority={false}
+          />
+        </figure>
 
-    <div className="text-center">
-        <h3>บริการรับทำโฆษณาออนไลน์ รับทำโฆษณา Facebook, Google Ads</h3>
-        <div className="ads-dark"> 
-    <img src="/img/adsdev.jpg" width='100%' alt="รับทำโฆษณาสายเทา" />
-    </div> </div>
-
-    <h3>บริการรับทำโฆษณา Facebook Ads</h3>
-<p>ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ อัตราค่าบริการเพียงเดือนละ 9,900 บาท ไม่มีค่าใช้จ่ายเพิ่มเติม มีรีวิวจากลูกค้าจริงให้ชม</p>
-<p>ไว้ใจเราได้ รูปภาพทั้งหมดนี้เป็นส่วนหนึ่งในการทำงานของเรา</p>
-<p>Facebook มีการเปลี่ยนแปลงอัลกอริธึมอย่างสม่ำเสมอ ซึ่งอาจส่งผลกระทบต่อการมองเห็นและประสิทธิภาพของโฆษณา</p>
-<p>การเปลี่ยนแปลงในนโยบายความเป็นส่วนตัว เช่น GDPR และ CCPA ส่งผลให้ Facebook ต้องปรับเปลี่ยนวิธีการเก็บข้อมูล</p>
-<p>จำนวนผู้ลงโฆษณาที่เพิ่มขึ้นทำให้การแข่งขันในแพลตฟอร์มสูงมาก</p>
-<p>ค่าใช้จ่ายในการลงโฆษณาอาจมีการเปลี่ยนแปลงอย่างต่อเนื่อง</p>
-<p>ข้อจำกัดในการเข้าถึงข้อมูลและรายงาน</p>
-<div className="imge"> 
-<img src="/imgs/facebook_ads.webp" width='100%' alt="facebook_ads" />
-</div>
-
-<div className="text-center m-3 ">
-  
-<div className="imge"> 
-<h4>ตัวอย่างที่นำมาแสดงนั้นอาจเป็นเพียงบางส่วนเท่านั้น</h4>
-    <img src="/imgfb/h01show.webp" width='50%' alt="facebook_ads" />
-
-</div>
-</div>
-
-<h4>ผลงานจากการทำงานสำหรับในส่วนของ Facebook บางส่วนที่นำมาแสดง</h4>
-<section className='box' >
-
-       <div className="item">
-        <img src="/imgfb/h0102.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0103.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0104.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0105.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0106.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0107.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0108.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0109.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0110.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0111.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0112.webp" width="100%" alt="facebook_ads" />
-       </div>
-       <div className="item">
-        <img src="/imgfb/h0113.webp" width="100%" alt="facebook_ads" />
-       </div>
-
-
-
-</section>
-
-<div className="cut m-2"></div>
-
-<section className='google'id='Google'>
-    <h3>การรับทำโฆษณา Google และ SEO</h3>
-    <p>ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ อัตราค่าบริการเพียงเดือนละ 9,900 บาท ไม่มีค่าใช้จ่ายเพิ่มเติม มีรีวิวจากลูกค้าจริงให้ชม</p>
-    <p>การทำโฆษณาผ่าน Google (Google Ads) และการทำ SEO</p>
-    <p>เป็นกลยุทธ์ที่สำคัญในการเพิ่มการมองเห็นและดึงดูดลูกค้า</p>
-    <p>การเข้าถึงที่กว้าง การกำหนดเป้าหมาย การวัดผลลัพธ์</p>
-    <p>การแข่งขันในบางกลุ่มคำค้นอาจทำให้ค่าใช้จ่ายต่อคลิก (CPC) สูง การจัดการแคมเปญที่ซับซ้อน การเปลี่ยนแปลงในอัลกอริธึมของ Google อาจส่งผลกระทบต่อประสิทธิภาพของโฆษณา</p>
-
-    <img src="/top.webp" width='100%' alt="รับทำโฆษณา" />
-
-    <div className='box mt-3' >
-        <div className="item">
-            <img src="/imggg/2.webp"  width="100%" alt="Google Ads" />
+        <div className="text-center mt-2">
+          <Link
+            href="https://lin.ee/RAtXbEtM"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="เพิ่มเพื่อน LINE เพื่อคุยกับทีมงาน"
+          >
+            <img
+              src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png"
+              alt="เพิ่มเพื่อน LINE"
+              height="36"
+              loading="lazy"
+            />
+          </Link>
         </div>
-        <div className="item">
-            <img src="/imggg/3.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/4.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/5.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/6.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/7.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/8.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/9.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/10.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/11.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/12.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/13.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/14.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/15.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/16.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/17.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/18.webp"  width="100%" alt="Google Ads" />
-        </div>
-        <div className="item">
-            <img src="/imggg/19.webp"  width="100%" alt="Google Ads" />
-        </div>
-       
-
-
-
-        </div>
-
-</section>
-<div className="cut"></div>
-
-<div className="reviwe" id='reviwe'>
-    <h3>review ลูกค้าจริง</h3>
-
-    <div className="box">
-    <div className="item">
-        <img src="review/1.webp" width='100%' alt="reviwe" />
-    </div>
-    <div className="item">
-        <img src="review/2.webp" width='100%' alt="reviwe" />
-    </div>
-    <div className="item">
-        <img src="review/3.webp" width='100%' alt="reviwe" />
-    </div>
-    <div className="item">
-        <img src="review/01.webp" width='100%' alt="reviwe" />
-    </div>
-    <div className="item">
-        <img src="review/02.webp" width='100%' alt="reviwe" />
-    </div>
-    <div className="item">
-        <img src="review/03.webp" width='100%' alt="reviwe" />
-    </div>
-    </div>
-
-
-
-</div>
-<div className="cut mt-3"></div>
-
-
-<div className="contact  mt-5" id='contact'>
-  <img src="/img/contact.webp" width='100%' alt="contact" />
-
-  <a href="https://lin.ee/RAtXbEtM"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"/></a>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-   
+      </section>
     </>
-  )
+  );
 }

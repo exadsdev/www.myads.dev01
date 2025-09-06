@@ -2,8 +2,12 @@
 User-agent: *
 Allow: /
 
+# *
+User-agent: *
+Disallow: /api
+
 # Host
-Host: https://www.myads.dev
+Host: https://www.myadsdev.shop
 
 # Sitemaps
-Sitemap: https://www.myads.dev/sitemap.xml
+Sitemap: https://www.myadsdev.shop/sitemap.xml
