@@ -1,90 +1,131 @@
-"use client"; 
+"use client";
 
-import React, { useEffect } from 'react';
-import Link from 'next/link'
-import Image from 'next/image'
-import Head from 'next/head'
+import React, { useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
 
 export default function Courses() {
+  useEffect(() => {
+    const schemaData = {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name: "www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์",
+      image: [
+        "https://www.myads.dev/img/รับทำโฆษณาสายเทา.webp",
+        "https://www.myads.dev/img/about.webp",
+      ],
+      description:
+        "www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์: โฆษณา Facebook และ Google สายเทา",
+      brand: {
+        "@type": "Brand",
+        name: "คอร์สเรียนโฆษณา",
+      },
+      offers: {
+        "@type": "Offer",
+        url: "https://www.myads.dev/Course",
+        priceCurrency: "THB",
+        price: "9900",
+        priceValidUntil: "2025-12-31",
+        itemCondition: "https://schema.org/NewCondition",
+        availability: "https://schema.org/InStock",
+        seller: {
+          "@type": "Organization",
+          name: "myad-dev",
+          url: "https://www.myads.dev",
+          logo: "https://www.myads.dev/img/logo.png",
+        },
+      },
+    };
 
-   useEffect(() => {
-      const schemaData = {
-        "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์",
-    "image": [
-      "https://www.myads.dev/img/รับทำโฆษณาสายเทา.webp",
-      "https://www.myads.dev/img/about.webp"
-    ],
-    "description": "www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์: โฆษณา Facebook และ Google สายเทา",
-    "brand": {
-      "@type": "Brand",
-      "name": "คอร์สเรียนโฆษณา"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://www.myads.dev/Course",
-      "priceCurrency": "THB",
-      "price": "9900",
-      "priceValidUntil": "2025-02-18",
-      "itemCondition": "https://schema.org/NewCondition",
-      "availability": "https://schema.org/InStock",
-      "seller": {
-        "@type": "Organization",
-        "name": "myad-dev",
-        "url": "https://www.myads.dev",
-        "logo": "https://www.myads.dev/img/logo.png"
-          }
-        }
-      };
-  
-      const script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.text = JSON.stringify(schemaData);
-      document.head.appendChild(script);
-    }, []);
-  
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+  }, []);
 
   return (
     <>
-      <>
-      <title>www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์ </title>
-<meta property="og:title" content="www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์"/>
-<meta property="og:description" content="www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์: โฆษณา Facebook และ Google สายเทา"/>
-<meta property="og:image" content="https://www.myads.dev/logo.png"/>
-<meta property="og:url" content="https://www.myads.dev/Course"/>
-<meta name="robots" content="index, follow"/>
-<meta property="og:type" content="website"/>
-<link rel="shortcut icon" href="https://www.myads.dev/favicon.ico" type="image/x-icon"/> 
+      <Head>
+        <title>
+          www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์
+        </title>
+        <meta
+          name="description"
+          content="www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์: โฆษณา Facebook และ Google สายเทา"
+        />
+        <meta
+          name="keywords"
+          content="คอร์สเรียนยิงแอด, คอร์สเรียนการตลาดออนไลน์, คอร์ส Facebook สายเทา, คอร์ส Google สายเทา, เรียนยิงแอดสายเทา"
+        />
+        <meta
+          property="og:title"
+          content="www.myads.dev:คอร์สเรียนโฆษณา | บริการคอร์สเรียนทำการตลาดออนไลน์"
+        />
+        <meta
+          property="og:description"
+          content="คอร์สเรียนทำการตลาดออนไลน์สายเทา เรียนยิงแอด Facebook และ Google สายเทาแบบตัวต่อตัว พร้อมรีโมทช่วยจริง"
+        />
+        <meta
+          property="og:image"
+          content="https://www.myads.dev/logo.png"
+        />
+        <meta property="og:url" content="https://www.myads.dev/Course" />
+        <meta property="og:type" content="website" />
+        <link
+          rel="shortcut icon"
+          href="https://www.myads.dev/favicon.ico"
+          type="image/x-icon"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.myads.dev/Course" />
+      </Head>
 
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://www.myads.dev/Course" />
-      </>
-
-      <div className='container'>
+      <div className="container">
         <div className="cassimg text-center">
           <h1>คอร์สเรียนสายเทา</h1>
-          <Image src="/img/cass.webp" width={1200} height={600} loading="lazy" className='imgfb' alt="คอร์สเรียนทำการตลาดออนไลน์" />
+          <Image
+            src="/img/cass.webp"
+            width={1200}
+            height={600}
+            loading="lazy"
+            className="imgfb"
+            alt="คอร์สเรียนทำการตลาดออนไลน์"
+          />
         </div>
 
-        <br /><br />
-
+        <br />
         <div className="d-flex justify-content-around">
-          <p href="#cass">
-            <a className='btn btn-outline-primary' href='/Course/Facebook-Ads' >คอร์สเรียน Facebook สายเทา</a>
-          </p>
+          <a
+            className="btn btn-outline-primary"
+            href="/Course/Facebook-Ads"
+          >
+            คอร์สเรียน Facebook สายเทา
+          </a>
 
-          <p href="#cass">
-            <a className='btn btn-outline-primary' href='/Course/Google-Ads' >คอร์สเรียน Google สายเทา</a>
-          </p>
+          <a
+            className="btn btn-outline-primary"
+            href="/Course/Google-Ads"
+          >
+            คอร์สเรียน Google สายเทา
+          </a>
         </div>
 
         <div className="text-center m-5">
           <h2>บริการคอร์สเรียนทำการตลาดออนไลน์</h2>
           <div className="cassimg">
-            <Image src="/img/course.webp" width={600} height={350} loading="lazy" className='imgfb' alt="คอร์สเรียนทำการตลาดออนไลน์" />
+            <Image
+              src="/img/course.webp"
+              width={600}
+              height={350}
+              loading="lazy"
+              className="imgfb"
+              alt="คอร์สเรียนทำการตลาดออนไลน์"
+            />
           </div>
         </div>
+
+   
 
         <h3>ทำไมคุณควรเรียนรู้การตลาดออนไลน์สายเทา?</h3>
         <p>การตลาดออนไลน์สายเทาเป็นหนึ่งในหัวข้อที่มีความท้าทายและมีโอกาสสูงในการสร้างรายได้หากคุณมีความรู้และความเข้าใจที่เพียงพอ...</p>

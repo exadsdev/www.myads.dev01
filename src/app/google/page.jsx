@@ -1,11 +1,12 @@
 // app/google/page.jsx
 import React from "react";
 import Image from "next/image";
+import Script from "next/script";
 
 export const metadata = {
-  title: "www.myads.dev:Google-Ads | รับทำโฆษณา Google Ads สายเทา",
+  title: "รับยิงแอดสายเทา|รับทำโฆษณา Google Ads สายเทา",
   description:
-    "www.myads.dev:Google-Ads | เนื้อหาความรู้ดีๆที่ทุกคนเข้าถึงได้ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ",
+    "รับยิงแอดสายเทา|เนื้อหาความรู้ดีๆที่ทุกคนเข้าถึงได้ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ",
   keywords: [
     "Google Ads",
     "รับทำโฆษณาสายเทา",
@@ -17,9 +18,9 @@ export const metadata = {
     canonical: "https://www.myads.dev/google",
   },
   openGraph: {
-    title: "www.myads.dev:Google-Ads | รับทำโฆษณา Google Ads สายเทา",
+    title: "รับยิงแอดสายเทา|รับทำโฆษณา Google Ads สายเทา",
     description:
-      "www.myads.dev:Google-Ads | เนื้อหาความรู้ดีๆที่ทุกคนเข้าถึงได้ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ",
+      "รับยิงแอดสายเทา|เนื้อหาความรู้ดีๆที่ทุกคนเข้าถึงได้ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ",
     url: "https://www.myads.dev/google",
     siteName: "myads.dev",
     images: [
@@ -34,13 +35,13 @@ export default function GooglePage() {
   const schemaData = {
     "@context": "https://schema.org/",
     "@type": "Product",
-    name: "www.myads.dev:Google-Ads | รับทำโฆษณา Google Ads สายเทา",
+    name: "รับยิงแอดสายเทา|รับทำโฆษณา Google Ads สายเทา",
     image: [
       "https://www.myads.dev/img/รับทำโฆษณาสายเทา.webp",
       "https://www.myads.dev/img/about.webp",
     ],
     description:
-      "www.myads.dev:Google-Ads | เนื้อหาความรู้ดีๆที่ทุกคนเข้าถึงได้ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ",
+      "รับยิงแอดสายเทา|เนื้อหาความรู้ดีๆที่ทุกคนเข้าถึงได้ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google ทำโฆษณาเว็บไซต์ต่างๆ ด้วยทีมงานมืออาชีพ",
     brand: {
       "@type": "Brand",
       name: "www.myads.dev:Google-Ads",
@@ -65,7 +66,8 @@ export default function GooglePage() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      <script
+   <Script
+        id="google-schema-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
@@ -78,7 +80,7 @@ export default function GooglePage() {
         <div className="text-center mb-4">
           <Image
             src="/img/ggads.jpg"
-            alt="ตัวอย่างงานโฆษณาออนไลน์ของทีม myads.dev"
+            alt="รับยิงแอดสายเทา|รับทำโฆษณา Google Ads สายเทา"
             width={1200}
             height={675}
             sizes="(max-width: 768px) 100vw, 1200px"

@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Script from "next/script";
+import Head from "next/head";
+
 const Video = () => {
   const [videos, setVideos] = useState([]);
 
@@ -16,15 +18,17 @@ const Video = () => {
     <>
       
       <>
-        <title>Video Tutorials - เรียนรู้วิธีการทำโฆษณา Google Ads สายเทาและอื่นๆ จากคลิปวีดีโอที่ครอบคลุมทุกด้าน สำหรับมือใหม่และผู้ที่ต้องการพัฒนาความรู้ด้านการตลาดออนไลน์</title>
+
+           <Head>
+        <title>เรียนรู้วิธีการทำโฆษณา สำหรับมือใหม่และผู้ที่ต้องการพัฒนาความรู้ด้านการตลาดออนไลน์</title>
         <meta name="description" content="เรียนรู้วิธีการทำโฆษณา Google Ads สายเทาและอื่นๆ จากคลิปวีดีโอที่ครอบคลุมทุกด้าน สำหรับมือใหม่และผู้ที่ต้องการพัฒนาความรู้ด้านการตลาดออนไลน์." />
         <meta name="keywords" content="ยิงads,facebook,สายเทา,โฆษณา,ยิงads facebook สายเทา,รับยิงads,รับยิงแอด สายเทา,facebook ads,google ads,google,รับยิงแอด,ads,รับทำโฆษณา,รับโฆษณา,Facebook,การตลาด,โฆษณาออนไลน์,เว็บไซต์,ตลาดเป้าหมาย,โฆษณาบนโซเชียลมีเดีย,Google Ads,การโฆษณาบน Facebook,การโฆษณาออนไลน์บนสื่อต่าง ๆ,การตลาดออนไลน์,การโปรโมท,โฆษณา Facebook,การโฆษณา Google,การโฆษณาสินค้า,การโฆษณาโปรโมชั่น,วิธีการโฆษณา,ความสำเร็จในการตลาด,บริการโฆษณา,การตลาดออนไลน์บน Facebook,การโฆษณาบนเว็บ,การวางแผนโฆษณา,รับจ้างโฆษณา,Google Ads, โฆษณาสายเทา, การตลาดออนไลน์, วีดีโอสอน, YouTube ads, เรียน Google Ads" />
         <meta property="og:title" content="เรียนรู้การทำโฆษณา Google Ads สายเทา" />
         <meta property="og:description" content="ติดตามวีดีโอสอนการทำโฆษณา Google Ads สายเทา ตั้งแต่พื้นฐานจนถึงขั้นสูง." />
-        <meta property="og:image" content="https://www.myad-dev.com/img/ads.webp" />
-        <meta property="og:url" content="https://www.myad-dev.com/videos" />
+        <meta property="og:image" content="https://www.myads.dev/img/ads.webp" />
+        <meta property="og:url" content="https://www.myads.dev/videos" />
         <meta name="twitter:card" content="summary_large_image" />
-
+ </Head>
         
         <Script type="application/ld+json">
           {JSON.stringify({
@@ -32,7 +36,7 @@ const Video = () => {
             "@type": "VideoObject",
             "name": "รับยิงแอดโฆษณาสายเทา",
             "description": "เรียนรู้วิธีการทำโฆษณา Google Ads สายเทาและอื่นๆ จากคลิปวีดีโอที่ครอบคลุมทุกด้าน สำหรับมือใหม่และผู้ที่ต้องการพัฒนาความรู้ด้านการตลาดออนไลน์",
-            "thumbnailUrl": "https://www.myad-dev.com/img/ads.webp",
+            "thumbnailUrl": "https://www.myads.dev/img/ads.webp",
             "uploadDate": "2025-08-18",
             "contentUrl": "/videos/Google_ads.mp4",
             "embedUrl": "/videos/Google_ads.mp4",

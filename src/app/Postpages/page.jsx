@@ -27,8 +27,8 @@ export default function Page() {
     "@type": "Product",
     name: "รับยิงแอดสายเทา รับจ้างยิงแอดทำโฆษณาออนไลน์",
     image: [
-      "https://myad-dev.com/img/รับทำโฆษณาสายเทา.webp",
-      "https://myad-dev.com/img/about.webp"
+      "https://myads.dev/img/รับทำโฆษณาสายเทา.webp",
+      "https://myads.dev/img/about.webp"
     ],
     description:
       "Postpages|รับยิงแอดสายเทา รับจ้างยิงแอดทำโฆษณาออนไลน์ Google, Facebook Ads",
@@ -38,7 +38,7 @@ export default function Page() {
     },
     offers: {
       "@type": "Offer",
-      url: "https://myad-dev.com/Postpages",
+      url: "https://myads.dev/Postpages",
       priceCurrency: "THB",
       price: "9900",
       priceValidUntil: "2025-02-18",
@@ -46,9 +46,9 @@ export default function Page() {
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
-        name: "myad-dev.com:PostPage",
-        url: "https://myad-dev.com",
-        logo: "https://myad-dev.com/img/logo.png"
+        name: "myads.dev:PostPage",
+        url: "https://myads.dev",
+        logo: "https://myads.dev/img/logo.png"
       }
     }
   };
@@ -61,11 +61,11 @@ export default function Page() {
         <meta name="description" content="รับยิงแอดสายเทา รับจ้างยิงแอดทำโฆษณาออนไลน์ Google, Facebook Ads ทีมงานมืออาชีพเริ่มต้น 9,900 บาท/เดือน" />
         <meta property="og:title" content="Postpages | รับจ้างยิงแอดทำโฆษณาออนไลน์ Google, Facebook Ads" />
         <meta property="og:description" content="บริการรับจ้างยิงแอดสายเทา Facebook และ Google ครบวงจรโดย myads.dev ทีมงานมืออาชีพ" />
-        <meta property="og:image" content="https://myad-dev.com/img/ads.jpg" />
-        <meta property="og:url" content="https://myad-dev.com/Postpages" />
+        <meta property="og:image" content="https://myads.dev/img/ads.jpg" />
+        <meta property="og:url" content="https://myads.dev/Postpages" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://myad-dev.com/Postpages" />
+        <link rel="canonical" href="https://myads.dev/Postpages" />
         <meta name="keywords" content="การยิงแอด, Google, สายเทา, คอร์สเรียนGoogleAdsสายเทา, GoogleAdsสายเทา, สายเทา, บริการคอร์สเรียน, ยิงads, facebook, สายเทา, โฆษณา, ยิงads facebook สายเทา, รับยิงads, รับยิงแอด สายเทา, facebook ads, google ads, google, ads, สอนยิงแอด, สอนยิงแอด Conversion, สอนยิงแอดสายเทา, ยิงแอดสายเทา, ยิงโฆษณาสายเทา, รับทำ seo สายเทา, รับทำ seo สายดำ, แอดสายเทา, รับยิงแอดสายเทา, กูเกิ้ลแอดสายเทา, รับทํา google ads, สายเทา seo สายเทา, ตลาดสีเทา, แอดสีเทา, adsสีเทา, กราฟฟิกสายเทา, ยิงแอดเทา, รับยิงแอดfacebookสายเทา, รูปยิงแอดสายเทา, รับจ้างสายเทา, รับโฆษณาสายเทา ยิงads, facebook, สายเทา, โฆษณา, ยิงads facebook สายเทา, รับยิงads, รับยิงแอด สายเทา, facebook ads, google ads, google, ads, รับยิงแอด, รับทำโฆษณา, รับโฆษณา, Facebook, การตลาด, โฆษณาออนไลน์, เว็บไซต์, ตลาดเป้าหมาย, โฆษณาบนโซเชียลมีเดีย, Google Ads, การโฆษณาบน Facebook, การโฆษณาออนไลน์บนสื่อต่าง ๆ, การตลาดออนไลน์, การโปรโมท, โฆษณา Facebook, การโฆษณา Google, การโฆษณาสินค้า, การโฆษณาโปรโมชั่น, วิธีการโฆษณา, ความสำเร็จในการตลาด, บริการโฆษณา, การตลาดออนไลน์บน Facebook, การโฆษณาบนเว็บ, การวางแผนโฆษณา" />
       </Head>
 

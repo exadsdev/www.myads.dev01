@@ -32,22 +32,22 @@ const PostDetailPage = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://myad-dev.com/Postpages/${title}`
+      "@id": `https://myads.dev/Postpages/${title}`
     },
     "headline": post.title,
     "description": post.content?.slice(0, 150),
-    "image": `https://myad-dev.com/logo.png`,
+    "image": `https://myads.dev/logo.png`,
     "author": {
       "@type": "Organization",
-      "name": "myad-dev.com",
-      "url": "https://myad-dev.com"
+      "name": "myads.dev",
+      "url": "https://myads.dev"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "myad-dev.com",
+      "name": "myads.dev",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://myad-dev.com/logo.png"
+        "url": "https://myads.dev/logo.png"
       }
     },
     "datePublished": post.created_at || "2025-01-01"
@@ -59,16 +59,18 @@ const PostDetailPage = () => {
       <Head>
         <title>{`${post.title} | รับยิงแอดสายเทา Facebook Google`}</title>
         <meta name="description" content={post.content?.slice(0, 160)} />
-        <meta name="keywords" content="ยิงแอดสายเทา, รับทำโฆษณา, โฆษณาสายเทา, Facebook Ads, Google Ads" />
+  
 
         {/* OG Tags */}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.content?.slice(0, 160)} />
-        <meta property="og:image" content="https://myad-dev.com/logo.png" />
-        <meta property="og:url" content={`https://myad-dev.com/Postpages/${title}`} />
+        <meta property="og:image" content="https://myads.dev/logo.png" />
+        <meta property="og:url" content={`https://myads.dev/Postpages/${title}`} />
         <meta property="og:type" content="article" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://myad-dev.com/Postpages/${title}`} />
+                <meta name="keywords" content="การยิงแอด, Google, สายเทา, คอร์สเรียนGoogleAdsสายเทา, GoogleAdsสายเทา, สายเทา, บริการคอร์สเรียน, ยิงads, facebook, สายเทา, โฆษณา, ยิงads facebook สายเทา, รับยิงads, รับยิงแอด สายเทา, facebook ads, google ads, google, ads, สอนยิงแอด, สอนยิงแอด Conversion, สอนยิงแอดสายเทา, ยิงแอดสายเทา, ยิงโฆษณาสายเทา, รับทำ seo สายเทา, รับทำ seo สายดำ, แอดสายเทา, รับยิงแอดสายเทา, กูเกิ้ลแอดสายเทา, รับทํา google ads, สายเทา seo สายเทา, ตลาดสีเทา, แอดสีเทา, adsสีเทา, กราฟฟิกสายเทา, ยิงแอดเทา, รับยิงแอดfacebookสายเทา, รูปยิงแอดสายเทา, รับจ้างสายเทา, รับโฆษณาสายเทา ยิงads, facebook, สายเทา, โฆษณา, ยิงads facebook สายเทา, รับยิงads, รับยิงแอด สายเทา, facebook ads, google ads, google, ads, รับยิงแอด, รับทำโฆษณา, รับโฆษณา, Facebook, การตลาด, โฆษณาออนไลน์, เว็บไซต์, ตลาดเป้าหมาย, โฆษณาบนโซเชียลมีเดีย, Google Ads, การโฆษณาบน Facebook, การโฆษณาออนไลน์บนสื่อต่าง ๆ, การตลาดออนไลน์, การโปรโมท, โฆษณา Facebook, การโฆษณา Google, การโฆษณาสินค้า, การโฆษณาโปรโมชั่น, วิธีการโฆษณา, ความสำเร็จในการตลาด, บริการโฆษณา, การตลาดออนไลน์บน Facebook, การโฆษณาบนเว็บ, การวางแผนโฆษณา" />
+
+        <link rel="canonical" href={`https://myads.dev/Postpages/${title}`} />
       </Head>
 
       {/* ✅ JSON-LD Schema */}
@@ -111,7 +113,7 @@ const PostDetailPage = () => {
         </div>
 
         <br />
-        <a href="https://myad-dev.com/Postpages" className="btn btn-info">
+        <a href="https://myads.dev/Postpages" className="btn btn-info">
           ⬅️ ดูทั้งหมด
         </a>
       </div>
