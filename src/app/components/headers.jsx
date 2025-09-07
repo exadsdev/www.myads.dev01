@@ -12,6 +12,7 @@ const navBar = [
     { href: '/Course', name: 'คอร์สเรียนโฆษณา' },
     { href: '/toolfree', name: 'ToolFree' },
     { href: '/video', name: 'video' },
+    { href: '/contact', name: 'contact' }
 
 ]
 

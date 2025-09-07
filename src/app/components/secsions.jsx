@@ -142,7 +142,7 @@ export default function Secsions() {
 
           <div className="imge mt-3">
             <Image
-              src="/imgs/facebook_ads.webp"
+              src="/img/facebook_ads.webp"
               width={1200}
               height={675}
               alt="ตัวอย่างครีเอทีฟ Facebook Ads"

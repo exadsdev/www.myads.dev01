@@ -131,38 +131,38 @@ export default function Homepage() {
     {
       "@context": "https://schema.org",
       "@type": "SiteNavigationElement",
-      name: "บริการ Google Ads",
-      url: `${SITE}/services/google-ads`,
+      name: "รับยิงแอดสายเทา Google-Adsสายเทา",
+      url: `${SITE}/google`,
     },
     {
       "@context": "https://schema.org",
       "@type": "SiteNavigationElement",
-      name: "บริการ Facebook Ads",
-      url: `${SITE}/services/facebook-ads`,
+      name: "รับยิงแอดสายเทา Facebook-Adsสายเทา",
+      url: `${SITE}/facebook`,
     },
     {
       "@context": "https://schema.org",
       "@type": "SiteNavigationElement",
-      name: "วัดผล & Analytics",
-      url: `${SITE}/services/analytics`,
+      name: "Postpages",
+      url: `${SITE}/Postpages`,
     },
     {
       "@context": "https://schema.org",
       "@type": "SiteNavigationElement",
-      name: "แพ็กเกจราคา",
-      url: `${SITE}/pricing`,
+      name: "คอร์สเรียนยิงแอดสายเทา",
+      url: `${SITE}/Course`,
     },
     {
       "@context": "https://schema.org",
       "@type": "SiteNavigationElement",
-      name: "เคสสตัดดี้ & ผลงาน",
-      url: `${SITE}/portfolio`,
+      name: "เครื่องมือถือยืงแอดฟรี",
+      url: `${SITE}/toolfree`,
     },
     {
       "@context": "https://schema.org",
       "@type": "SiteNavigationElement",
-      name: "บทความการตลาด",
-      url: `${SITE}/blog`,
+      name: "videoสอนการตลาด",
+      url: `${SITE}/video`,
     },
   ];
 
@@ -192,8 +192,8 @@ export default function Homepage() {
     name: "แพ็กเกจโฆษณารายเดือน",
     image: [`${SITE}/images/adsdev.jpg`, `${SITE}/images/adsdev-alt.jpg`],
     description:
-      "แพ็กเกจบริการทำโฆษณา Google & Facebook ครบวงจร รายเดือน พร้อมรายงานผล",
-    brand: { "@type": "Brand", name: "myads.dev" },
+      "รับยิงแอดสายเทา แพ็กเกจบริการทำโฆษณา Google & Facebook ครบวงจร รายเดือน พร้อมรายงานผล",
+    brand: { "@type": "Brand", name: "รับยิงแอดสายเทา" },
     offers: {
       "@type": "Offer",
       url: SITE,
@@ -303,10 +303,10 @@ export default function Homepage() {
           {[
             { href: "/google", title: "บริการ Google Ads" },
             { href: "/facebook", title: "บริการ Facebook Ads" },
-            { href: "/analytics", title: "วัดผล & Analytics" },
-            { href: "/Course", title: "แพ็กเกจราคา" },
-            { href: "/toolfree", title: "เคสสตัดดี้ & ผลงาน" },
-            { href: "/Postpages", title: "บทความการตลาด" },
+            { href: "/Postpages", title: "Postpages" },
+            { href: "/Course", title: "คอร์สเรียนสายเทา" },
+            { href: "/toolfree", title: "บริการฟรี sale Page สายเทา" },
+            { href: "/video", title: "video สอนยิงแอดสายเทา" },
           ].map((item) => (
             <Link key={item.href} href={item.href} className="card" style={{ gridColumn: "span 4", display: "block", textDecoration: "none" }}>
               <strong style={{ display: "block", marginBottom: 6 }}>{item.title}</strong>

@@ -9,7 +9,8 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="container py-5">
-      <section className="row justify-content-center">
+      <section className="row justify-content-center"> 
+        <a href="/">HomePage</a>
         <div className="col-lg-8">
           <div className="card shadow-sm border-0 rounded-4 overflow-hidden">
             <div

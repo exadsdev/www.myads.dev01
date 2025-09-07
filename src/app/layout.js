@@ -15,11 +15,11 @@ const geistSans = { variable: "--font-geist-sans" };
 const geistMono = { variable: "--font-geist-mono" };
 
 export const metadata = {
-  title: "myads.dev - รับทำโฆษณาออนไลน์ Google & Facebook Ads",
-  description: "บริการรับทำโฆษณาออนไลน์ Google & Facebook Ads ครบวงจร",
+  title: "รับยิงแอดสายเทา รับทำโฆษณาออนไลน์ Google & Facebook Ads",
+  description: "รับยิงแอดสายเทา บริการรับทำโฆษณาออนไลน์ Google & Facebook Ads ครบวงจร",
   openGraph: {
-    title: "myads.dev",
-    description: "บริการรับทำโฆษณาออนไลน์ Google & Facebook Ads ครบวงจร",
+    title: "รับยิงแอดสายเทา",
+    description: "รับยิงแอดสายเทา บริการรับทำโฆษณาออนไลน์ Google & Facebook Ads ครบวงจร",
     url: "https://www.myads.dev",
   },
 };
